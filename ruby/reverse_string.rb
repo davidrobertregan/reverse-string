@@ -1,5 +1,10 @@
 def reverse_string(str)
-  # type your code in here
+  str_arr = str.split("")
+  reversed = []
+  str_arr.length.times { |l| reversed << str_arr.pop }
+
+  reversed.join ""
+
 end
 
 if __FILE__ == $PROGRAM_NAME
